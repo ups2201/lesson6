@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ups2201/lesson6/issues"
   },
-  "homepage": "https://github.com/ups2201/lesson6#readme"
+  "homepage": "https://github.com/ups2201/lesson6#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
