@@ -8,7 +8,5 @@
  * @returns {*}
  */
 function sum(a, b) {
-    return a.length + b.length;
+  return a.length + b.length;
 }
-
-console.log(sum("123","3211"))
