@@ -7,6 +7,6 @@
  * @param b
  * @returns {*}
  */
-export function sum(a, b) {
-  return a + b;
+export function sumAndMulti(a, b) {
+  console.log(a * b, a + b);
 }

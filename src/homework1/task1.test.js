@@ -1,7 +1,9 @@
-import { sum } from "./task1";
+import { sumAndMulti } from "./task1";
 
 describe("Sum", () => {
   it("return sum of two numbers", () => {
-    expect(sum(1, 2)).toEqual(3);
+    const logSpy = jest.spyOn(console, "log");
+    sumAndMulti(1, 2);
+    expect(logSpy).toHaveBeenCalledWith(2, 3);
   });
 });
