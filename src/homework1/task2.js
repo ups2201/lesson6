@@ -7,8 +7,6 @@
  * @param b
  * @returns {*}
  */
-function sum(a, b) {
-    return a.length + b.length;
+export function sumLength(a, b) {
+  console.log(a.length + b.length);
 }
-
-console.log(sum("123","3211"))
