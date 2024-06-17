@@ -43,7 +43,7 @@ export function getMonth() {
     case 12:
       console.log("декабрь");
       break;
-    // default:
-    //   console.log("Некорректное значение");
+    default:
+      console.log("Некорректное значение");
   }
 }

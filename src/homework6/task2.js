@@ -5,5 +5,5 @@
  * @returns {*}
  */
 export function isWord(word) {
-  return word.split(" ").length === 1;
+  return word.trim().split(" ").length === 1;
 }

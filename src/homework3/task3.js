@@ -8,13 +8,10 @@ export function sum() {
   const n = `${prompt("Input")}`;
   let sum = 0;
   let count = 0;
-  let i = 1;
-  while (i <= n) {
-    if (i % 2 === 1) {
-      count++;
-      sum += i;
-    }
-    i++;
+
+  for (let i = 1; i <= n; i = i + 2) {
+    sum += i;
+    count++;
   }
 
   console.log(sum / count);
