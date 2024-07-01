@@ -17,9 +17,7 @@ describe("runApp", () => {
 
   function typeText(text) {
     input.value = text;
-    console.log(input.value);
     input.dispatchEvent(new Event("input"));
-    console.log("value = " + el.querySelector("input").value);
   }
 
   function clearText() {
@@ -74,7 +72,6 @@ describe("runApp", () => {
 
   it("remove paragraph if they more then 5", () => {
     for (let i = 4; i < 7; i++) {
-      console.log(getParagraphs());
       typeText(`${i}${i}${i}`);
       pressButton();
     }

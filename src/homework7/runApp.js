@@ -1,6 +1,6 @@
 export function runApp(el) {
   el.innerHTML = `
-        <input/>
+        <input></input>
         <button>Click</button>
         <p>111</p>
         <p>222</p>
@@ -12,7 +12,6 @@ export function runApp(el) {
   let input = el.querySelector("input");
 
   function onInputChange() {
-    console.log("input.value = " + input.value);
     if (input.value.length > 0) {
       button.hidden = false;
     } else {
@@ -22,7 +21,7 @@ export function runApp(el) {
 
   function onButtonClick() {
     let paragraph = document.createElement("p");
-    paragraph.innerText = input.value;
+    paragraph.innerHTML = input.value;
     el.appendChild(paragraph);
     let items = el.querySelectorAll("p");
     if (items.length > 5) {
